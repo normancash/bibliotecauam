@@ -21,5 +21,17 @@
     	</action>
 	</controller>    
     -->
+    <controller name="Libro">
+        <extends controller="CRUD"/>
+        <action name="delete"
+                mode="list"
+                confirm="true"
+                class="org.example.bibliotecauam.actions.DeleteLibro"
+                image="delete.gif"
+                icon="delete"
+                available-on-new="false"
+                keystroke="Control D"
+            />
+    </controller>
     
 </controllers>
